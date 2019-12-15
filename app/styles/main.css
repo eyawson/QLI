@@ -1,3 +1,5 @@
+/* colors: #005753, d9ecec, fff */
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -7,8 +9,133 @@
 
 body {
   background: #fafafa;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;;
   font-size: 16px;
   color: #333;
   box-sizing: border-box;
+  margin: 0;
+}
+h2 {
+  margin-top: 150px;
+  color: #ffffff;
+  background-color: rgba(8, 8, 8, 0.7);
+  padding-left: 10px;
+  text-align: center;
+  font-weight: 600;
+  height: 120px;
+  padding-top: 30px;
+}
+.menu {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  color: #000;
+}
+.services {
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+}
+.services > a,
+.services > a:visited {
+  text-decoration: none;
+  color: #005753;
+  font-weight: 700;
+}
+.services > a:hover {
+  color: #b8ddb1;
+}
+.day, main {
+  background-color: #d9ecec;
+}
+.residential {
+  background-color: #ffffff;
+}
+main > div > p {
+  color: #005753;
+}
+main > h3 {
+  color: #005753;
+}
+.about {
+  color: #d9ecec;
+  background-color: #005753;
+}
+/* .backgroundTransition {
+  background-image:url('1.jpg');
+} */
+
+@media only screen and (max-width: 320px) {
+  header {
+    background: 
+      url(/images/home.jpg);
+    height: 400px;
+  }
+  header > a > img {
+    height: 70px;
+    padding-left: 5px;
+  }
+  button {
+    border: 1px solid #005753;
+    font-size: larger;
+    margin: 15px;
+    padding: 10px;
+  }
+  nav {
+    float: right;
+  }
+  nav a,
+  button {
+    padding: 10px;
+    color: #FFF;
+  }
+  nav a:hover,
+  button:hover {
+    background-color: #D9ECEC;
+    color: #005753;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  header {
+    background: 
+      url(/images/home.jpg);
+    height: 400px;
+  }
+  header > a > img {
+    height: 70px;
+    padding-left: 5px;
+  }
+  button {
+    border: 1px solid green;
+    font-size: larger;
+    margin: 15px;
+    padding: 10px;
+  }
+  .about,
+  main {
+    padding: 10px 5px;
+  }
+  nav {
+    float: right;
+  }
+  nav a,
+  button {
+    padding: 10px;
+    color: #FFF;
+  }
+  nav a:hover,
+  button:hover {
+    background-color: #D9ECEC;
+    color: #005753;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 }

@@ -1,12 +1,36 @@
 <!doctype html>
-<html lang="">
+<html lang="en">
+  <!--
+  | |______
+  | |* * * )
+  | | * * (_________
+  | |* * * |* *|####)
+  | | * * *| * |   (________________
+  | |* * * |* *|####|##############|
+  | | * * *| * |    |              |
+  | |* * * |* *|####|##############|
+  | |~~~~~~| * |    |              |
+  | |######|* *|####|##############|
+  | |      |~~~'    |              |
+  | |######|########|##############|
+  | |      |        |              |
+  | |######|########|##############|
+  | |~~~~~~|        |              |
+  | |      |########|##############|
+  | |      '~~~~~~~~|              |
+  | |               |##############|
+  | |               '~~~~~~~~~~~~~~~
+  | |
+  | |
+  | |
+  -->
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>QLI</title>
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap" rel="stylesheet">
     <!-- Place favicon.ico in the root directory -->
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
@@ -18,33 +42,93 @@
     <![endif]-->
     <header>
       <!-- @todo: logo -->
-      <nav></nav>
+      <a href="/">
+        <img src="/images/logo.svg" alt="logo">
+      </a>
+      <nav>
+        <button class="menu">MENU</button>
+        <!-- <a href="#">Home</a>
+        <a href="#">Day Services</a>
+        <a href="#">Residential Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a> -->
+      </nav>
+      <h2>
+        Carefully Calculated For Maximum Impact And Growth
+      </h2>
     </header>
-    <main>
-      <!-- @todo: slideshow -->
-    </main>
     <!-- links to residential and day-->
     <section>
-      <div>
-        <button>Day Services</button>
+      <div class="services day">
+        <a href="/dayprogram.html">Day Services</a>
       </div>
-      <div>
-        <button>Residential Services</button>
+      <div class="services residential">
+        <a href="/residential.html">Residential Services</a>
       </div>
     </section>
     <!-- about qli-->
-    <section class="intro">
-      <p>
-        Quantum Leap, Inc (QLI). is a non-profit organization incorporated in the state of Maryland under the auspices of the Developmental Disabilities Administration. We provide community and residentially supported services to individuals with “Unique abilities”.
-      </p>
-      <p>
-        To that end, QLI assists individuals to integrate meaningfully into neighborhoods /communities of choice. QLI provides different levels of assistance and structure that allows individuals to live in the least restrictive environment. In collaboration with the Developmental Disabilities Administration (DDA), QLI assists the State of Maryland in its community integration efforts.
-      </p>
-      <p>
-        QLI is also committed to working closely with the families /proponents of individuals. Individuals are afforded a wide array of services from which they may choose
-      </p>
+    <main class="intro">
+      <h3>
+        Who we are
+      </h3>
+      <div>
+        <img src="/images/together.svg" alt="placeholder" class="center">
+        <p>
+          Quantum Leap, Inc (QLI). is a non-profit organization incorporated in the state of Maryland under the 
+          auspices of the Developmental Disabilities Administration. We provide community and residentially 
+          supported services to individuals with “Unique abilities”.
+        </p>
+      </div>
+      <div>
+        <img src="/images/family.svg" alt="placeholder" class="center">
+        <p>
+          To that end, QLI assists individuals to integrate meaningfully into neighborhoods or communities of choice. 
+          QLI provides different levels of assistance and structure that allows individuals to live in the least 
+          restrictive environment. In collaboration with the Developmental Disabilities Administration (DDA), 
+          QLI assists the State of Maryland in its community integration efforts.
+        </p>
+      </div>
+      <div>
+        <img src="/images/agree.svg" alt="placeholder" class="center">
+        <p>
+          QLI is also committed to working closely with the families or proponents of individuals. Individuals are 
+          afforded a wide array of services from which they may choose.
+        </p>
+      </div>
+    </main>
+    <section class="about">
+      <div>
+        <h3>
+          Driven by a vision to empower and encourage!
+        </h3>
+        <p>
+          QLI ensures that services are flexible and dynamic to meet the needs of the individuals or families desiring specific areas of support and for those who have changing needs.
+          QLI makes certain that services are also readily adaptable to the changing needs of individuals and families. Our mission is driven by a vision to empower and encourage all 
+          individuals and their proponents to participate in program planning, and to provide personalized quality services by fostering and emphasizing effective growth, development, 
+          and integration.
+        </p>
+        <br>
+        <p>
+          QLI commits to paying particular attention to the individuals’ choices and preferences in the process of assisting each individual to achieve his/her 
+          maximum potential, which is ultimately geared toward attaining relative levels of independence.
+        </p>
+        <br>
+        <p>
+          QLI uses the necessary “person-centered”
+          approach in order to enable each individual to live successfully in the community. QLI strives to provide specialized living arrangements to all eligible individuals 
+          without discrimination on the basis of race, color, sex, age, national origin, marital status or “unique abilities”.
+        </p>
+      </div>
+      <div>
+        <!--philosophy goes here-->
+      </div>
     </section>
-    <footer></footer>
+    <section class="contact"></section>
+    <footer>
+      <p>
+        &copy; 2019 <span><a href="http://www.fitspros.com/">fits</a></span>
+      </p>
+    </footer>
     <!-- build:js scripts/vendor.js -->
     <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
     <!-- endbuild -->
