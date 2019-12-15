@@ -18,18 +18,34 @@ body {
 }
 .backgroundTransition {
   background-image:url('images/1.jpg');
-  height: 400;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+button {
+  border: 1px solid #005753;
+  font-size: larger;
+  margin: 15px;
+  padding: 10px;
+}
+a {
+  text-decoration: none;
 }
 h2 {
-  margin-top: 150px;
+  margin-top: 200px;
   color: #ffffff;
   background-color: rgba(8, 8, 8, 0.7);
   padding-left: 10px;
   text-align: center;
   font-weight: 600;
-  height: 120px;
-  padding-top: 30px;
-  font-size: 2rem;
+  height: 150px;
+  padding-top: 40px;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+h3 {
+  text-align: center;
 }
 .menu {
   background-color: Transparent;
@@ -37,7 +53,8 @@ h2 {
   cursor:pointer;
   overflow: hidden;
   outline:none;
-  color: #000;
+  color: #ffffff;
+  border-radius: 5px;
 }
 .services {
   height: 100px;
@@ -72,20 +89,13 @@ main > h3 {
 }
 
 @media only screen and (max-width: 320px) {
-  /* header {
-    background: 
-      url(/images/home.jpg);
-    height: 400px;
-  } */
+  h2 {
+    padding-top: 30px;
+    height: 200px;
+  }
   header > a > img {
     height: 70px;
     padding-left: 5px;
-  }
-  button {
-    border: 1px solid #005753;
-    font-size: larger;
-    margin: 15px;
-    padding: 10px;
   }
   nav {
     float: right;
@@ -103,20 +113,12 @@ main > h3 {
 }
 
 @media only screen and (max-width: 375px) {
-  /* header {
-    background: 
-      url(/images/home.jpg);
-    height: 400px;
-  } */
+  h2 {
+    padding-top: 20px;
+  }
   header > a > img {
     height: 70px;
     padding-left: 5px;
-  }
-  button {
-    border: 1px solid green;
-    font-size: larger;
-    margin: 15px;
-    padding: 10px;
   }
   .about,
   main {
@@ -140,5 +142,9 @@ main > h3 {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+  }
+  p {
+    padding-left: 10px;
+    max-width: 90%;
   }
 }
