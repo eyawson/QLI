@@ -16,7 +16,7 @@ body {
   scroll-behavior: smooth;
 }
 .backgroundTransition {
-  background-image:url('images/1.jpg');
+  background-image: url('images/1.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,7 +39,7 @@ h2 {
   padding-left: 10px;
   text-align: center;
   font-weight: 600;
-  height: 150px;
+  height: auto;
   padding-top: 40px;
   font-size: 2.5rem;
   line-height: 1.5;
@@ -129,6 +129,15 @@ address {
 address,
 address a {
   color: #005753;
+}
+footer {
+  height: 300px;
+  background-color: #005753;
+  color: #d9ecec;
+  padding: 20px;
+}
+footer a {
+  color: #D9ECEC;
 }
 
 @media only screen and (max-width: 320px) {
@@ -277,6 +286,9 @@ address a {
 }
 
 @media only screen and (min-width: 768px) {
+  body {
+    font-size: 1.4rem;
+  }
   h2 {
     padding-top: 20px;
     max-width: 600px;
@@ -308,10 +320,11 @@ address a {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    height: 200px;
   }
   p {
-    padding-left: 10px;
-    max-width: 90%;
+    padding-left: 60px;
+    max-width: 85%;
   }
   .selection {
     display: flex;
