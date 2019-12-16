@@ -1,5 +1,3 @@
-/* colors: #005753, d9ecec, fff */
-
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -15,6 +13,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   font-size: 1.7rem;
+  scroll-behavior: smooth;
 }
 .backgroundTransition {
   background-image:url('images/1.jpg');
@@ -31,6 +30,7 @@ button {
 }
 a {
   text-decoration: none;
+  list-style-type: none;
 }
 h2 {
   margin-top: 200px;
@@ -87,15 +87,54 @@ main > h3 {
   color: #d9ecec;
   background-color: #005753;
 }
+.dropbtn {
+  cursor: pointer;
+}
+/* .dropbtn:hover, .dropbtn:focus {
+  background-color: #005753;
+} */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(8, 8, 8, 0.7);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+  transition:height 200ms ease-in;
+}
+.dropdown-content a {
+  color: #ffffff;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition:height 200ms ease-in;
+}
+.dropdown-content a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.show {
+  display:block;
+}
+address {
+  padding: 25px 10px;
+  font-size: 1.7rem;
+}
+address,
+address a {
+  color: #005753;
+}
 
 @media only screen and (max-width: 320px) {
   h2 {
     padding-top: 30px;
     height: 200px;
-  }
-  header > a > img {
-    height: 70px;
-    padding-left: 5px;
   }
   nav {
     float: right;
@@ -105,11 +144,6 @@ main > h3 {
     padding: 10px;
     color: #FFF;
   }
-  nav a:hover,
-  button:hover {
-    background-color: #D9ECEC;
-    color: #005753;
-  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -117,8 +151,8 @@ main > h3 {
     padding-top: 20px;
   }
   header > a > img {
-    height: 70px;
-    padding-left: 5px;
+    height: 90px;
+    padding-left: 10px;
   }
   .about,
   main {
@@ -146,5 +180,161 @@ main > h3 {
   p {
     padding-left: 10px;
     max-width: 90%;
+  }
+}
+
+@media only screen and (min-width: 376px) {
+  h2 {
+    padding-top: 20px;
+  }
+  header > a > img {
+    height: 90px;
+    padding-left: 10px;
+  }
+  .about,
+  main {
+    padding: 10px 5px;
+  }
+  nav {
+    float: right;
+  }
+  nav a,
+  button {
+    padding: 10px;
+    color: #FFF;
+  }
+  nav a:hover,
+  button:hover {
+    background-color: #D9ECEC;
+    color: #005753;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  p {
+    padding-left: 10px;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 426px) {
+  h2 {
+    padding-top: 20px;
+  }
+  header > a > img {
+    height: 90px;
+    padding-left: 10px;
+  }
+  .about,
+  main {
+    padding: 10px 5px;
+  }
+  nav {
+    float: right;
+  }
+  nav a,
+  button {
+    padding: 10px;
+    color: #FFF;
+  }
+  nav a:hover,
+  button:hover {
+    background-color: #D9ECEC;
+    color: #005753;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  p {
+    padding-left: 10px;
+    max-width: 90%;
+  }
+  .day {
+    width: 100%;
+    background-image: url('/images/day\ link\ bg.jpg');
+    background-size: auto;
+    background-position: 42% 0px;
+    border-left: 1px solid #d9ecec;
+  }
+  .residential {
+    width: 100%;
+    background-image: url('/images/re\ link\ bg.jpg');
+    background-size: auto;
+    background-position: 42% 0px;
+    border-left: 1px solid #d9ecec;
+  }
+  .day a,
+  .residential a {
+    background-color: #d9ecec;
+    padding: 3px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h2 {
+    padding-top: 20px;
+    max-width: 600px;
+    margin-left: 75px;
+  }
+  header > a > img {
+    height: 90px;
+    padding-left: 10px;
+  }
+  .about,
+  main {
+    padding: 10px 5px;
+  }
+  nav {
+    float: right;
+  }
+  nav a,
+  button {
+    padding: 10px;
+    color: #FFF;
+  }
+  nav a:hover,
+  button:hover {
+    background-color: #D9ECEC;
+    color: #005753;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  p {
+    padding-left: 10px;
+    max-width: 90%;
+  }
+  .selection {
+    display: flex;
+  }
+  .day {
+    width: 49%;
+    background-image: url('/images/day\ link\ bg.jpg');
+    background-size: auto;
+    background-position: 42% 0px;
+    background-repeat: no-repeat;
+    border-left: 1px solid #d9ecec;
+  }
+  .residential {
+    width: 49%;
+    background-image: url('/images/re\ link\ bg.jpg');
+    background-size: auto;
+    background-position: 42% 0px;
+    background-repeat: no-repeat;
+    border-left: 1px solid #d9ecec;
+  }
+  .day a,
+  .residential a {
+    background-color: #d9ecec;
+    padding: 3px;
   }
 }

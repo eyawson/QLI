@@ -42,33 +42,25 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <header class="backgroundTransition">
-      <!-- @todo: logo -->
+      <!-- @todo: add alt to images -->
       <a href="/">
         <img src="/images/logo.svg" alt="logo">
       </a>
-      <nav>
-        <button class="menu"><a href="javascript:void(0)">MENU</a></button>
-        <!-- <ul>
-          <li>
-            <a href="#">Day Services</a>
-          </li>
-          <li>
-            <a href="#">Residential Services</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul> -->
+      <nav class="dropdown">
+          <button  onclick="myDropdown()" class="menu dropbtn">MENU</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="/dayprogram.html">Day Services</a>
+            <a href="/residential.html">Residential Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
       </nav>
       <h2>
         Carefully Calculated For Maximum Impact And Growth
       </h2>
     </header>
     <!-- links to residential and day-->
-    <section>
+    <section class="selection">
       <div class="services day">
         <a href="/dayprogram.html">Day Services</a>
       </div>
@@ -82,7 +74,7 @@
         Who we are
       </h3>
       <div>
-        <img src="/images/together.svg" alt="placeholder" class="center">
+        <img src="/images/together.svg" alt="svg showing people together" class="center">
         <p>
           Quantum Leap, Inc (QLI). is a non-profit organization incorporated in the state of Maryland under the 
           auspices of the Developmental Disabilities Administration. We provide community and residentially 
@@ -90,7 +82,7 @@
         </p>
       </div>
       <div>
-        <img src="/images/family.svg" alt="placeholder" class="center">
+        <img src="/images/family.svg" alt="svg depicting all inclusiveness" class="center">
         <p>
           To that end, QLI assists individuals to integrate meaningfully into neighborhoods or communities of choice. 
           QLI provides different levels of assistance and structure that allows individuals to live in the least 
@@ -99,14 +91,14 @@
         </p>
       </div>
       <div>
-        <img src="/images/agree.svg" alt="placeholder" class="center">
+        <img src="/images/agree.svg" alt="svg depicting handshake" class="center">
         <p>
           QLI is also committed to working closely with the families or proponents of individuals. Individuals are 
           afforded a wide array of services from which they may choose.
         </p>
       </div>
     </main>
-    <section class="about">
+    <section id="about" class="about">
       <div>
         <h3>
           Driven by a vision to empower and encourage!
@@ -133,7 +125,14 @@
         <!--philosophy goes here-->
       </div>
     </section>
-    <section class="contact"></section>
+    <address id="contact" class="contact">
+      Email us: <a href="mailto:webmaster@example.com">Quantum Leap, Inc.</a>
+      <br>
+      Example.com<br>
+      10989 Red Run Blvd,<br>
+      Owings Mills, MD 21117<br>
+      USA
+    </address>
     <footer>
       <p>
         &copy; 2019 <span><a href="http://www.fitspros.com/">fits</a></span>
