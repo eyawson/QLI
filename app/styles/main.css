@@ -1,3 +1,4 @@
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -9,6 +10,7 @@ body {
   background: #fafafa;
   font-family: 'Montserrat', sans-serif;;
   font-size: 16px;
+  line-height: 1.5;
   color: #333;
   box-sizing: border-box;
   margin: 0;
@@ -16,11 +18,25 @@ body {
   scroll-behavior: smooth;
 }
 .backgroundTransition {
-  background-image: url('images/1.jpg');
+  background-image: url("/app/images/1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
+}
+.dayBg {
+  background-image: url("/images/18.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.resBg {
+  background-image: url("/images/20.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 button {
   border: 1px solid #005753;
@@ -28,9 +44,14 @@ button {
   margin: 15px;
   padding: 10px;
 }
-a {
+a,
+section ul li {
   text-decoration: none;
   list-style-type: none;
+}
+section ul li {
+  text-align: center;
+  font-size: 2rem;
 }
 h2 {
   margin-top: 200px;
@@ -46,6 +67,8 @@ h2 {
 }
 h3 {
   text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
 }
 .menu {
   background-color: Transparent;
@@ -71,17 +94,16 @@ h3 {
 .services > a:hover {
   color: #b8ddb1;
 }
-.day, main {
-  background-color: #d9ecec;
+.day, main, .bullet {
+  background-color: #d9ecec !important;
 }
 .residential {
   background-color: #ffffff;
 }
-main > div > p {
-  color: #005753;
-}
-main > h3 {
-  color: #005753;
+main > div > p,
+main > h3,
+.bullet {
+  color: #005753 !important;
 }
 .about {
   color: #d9ecec;
@@ -138,6 +160,13 @@ footer {
 }
 footer a {
   color: #D9ECEC;
+}
+.footerDayRes {
+  background-color: #D9ECEC !important;
+  color: #005753 !important;
+}
+.footerDayRes a {
+  color: #005753 !important;
 }
 
 @media only screen and (max-width: 320px) {
@@ -300,7 +329,7 @@ footer a {
   }
   .about,
   main {
-    padding: 10px 5px;
+    padding: 20px 5px;
   }
   nav {
     float: right;
@@ -323,8 +352,8 @@ footer a {
     height: 200px;
   }
   p {
-    padding-left: 60px;
-    max-width: 85%;
+    padding-left: 15%;
+    max-width: 70%;
   }
   .selection {
     display: flex;
@@ -349,5 +378,28 @@ footer a {
   .residential a {
     background-color: #d9ecec;
     padding: 3px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  h2 {
+    margin-top: 300px;
+    font-size: 5rem;
+    margin-left: 150px;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+  .residential,
+  .day {
+    background-repeat: repeat;
+    width: 50%;
+  }
+  .services {
+    height: 150px;
+    line-height: 150px;
   }
 }
