@@ -145,6 +145,7 @@ main > h3,
   display:block;
 }
 #download {
+  color: #005753;
   background-color: transparent;
   border: 1px solid #005753;
   border-radius: 5px;
@@ -202,7 +203,8 @@ footer a {
     padding-left: 10px;
   }
   .about,
-  main {
+  main,
+  address a {
     padding: 10px 5px;
   }
   nav {
@@ -239,7 +241,8 @@ footer a {
     padding-left: 10px;
   }
   .about,
-  main {
+  main,
+  address a {
     padding: 10px 5px;
   }
   nav {
@@ -337,7 +340,8 @@ footer a {
     padding-left: 10px;
   }
   .about,
-  main {
+  main,
+  address a {
     padding: 20px 5px;
   }
   nav {
@@ -360,7 +364,8 @@ footer a {
     width: 50%;
     height: 200px;
   }
-  p {
+  p,
+  address a {
     padding-left: 15%;
     max-width: 70%;
   }
