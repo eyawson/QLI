@@ -144,6 +144,15 @@ main > h3,
 .show {
   display:block;
 }
+#download {
+  background-color: transparent;
+  border: 1px solid #005753;
+  border-radius: 5px;
+}
+#download:hover {
+  background-color: #005753;
+  color: #ffffff;
+}
 address {
   padding: 25px 10px;
   font-size: 1.7rem;
